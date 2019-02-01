@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const soap = require('soap')
 const path = require('path')
 const app= express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5000
 
 
 var Sort = require('./includes/Sort')
@@ -13,6 +13,7 @@ var fedex = require('./includes/FedEx')
 var aramex = require('./includes/Aramex')
 var db = require('./includes/Db')
 
+app.use(express.static(path.join(__dirname, 'public')))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({   
   extended: true
