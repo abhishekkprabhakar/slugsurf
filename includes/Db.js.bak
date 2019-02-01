@@ -1,0 +1,12 @@
+
+function readPlace(data,callback){
+	//your_function();
+	var origin = data.origin;
+	var destination = data.destination;
+	console.log(data);
+	if (callback)
+		callback({ stateCode: 'NY' });
+}
+
+
+module.exports = { readPlace }
