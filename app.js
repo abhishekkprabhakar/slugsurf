@@ -19,8 +19,9 @@ app.use(bodyParser.urlencoded({
 })); 
 
 
+
 app.get('/', function(req,res){ 
-	res.write('( o Y o )');	
+	res.write('( o Y o )sdfdgdfg');	
 	res.end();
 });
 app.get('/calculate', function(req,res,next){ 
